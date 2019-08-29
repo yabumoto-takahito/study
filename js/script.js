@@ -32,9 +32,9 @@ jQuery('a[href^="#"]').click(function () {
 
 // ドロップダウンメニュー
 $(function(){
-    $('.drawer-list li').hover(function(){
+    $('.pickup-item-img img').hover(function(){
         $("ul:not(:animated)", this).slideDown();
     }, function(){
-        $("ul.dropdwn_menu",this).slideUp();
+        $(".pickup-item-body #dropdwn",this).slideUp();
     });
 });
