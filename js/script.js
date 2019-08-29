@@ -29,3 +29,12 @@ jQuery('a[href^="#"]').click(function () {
 	);
 	return false;
 });
+
+// ドロップダウンメニュー
+$(function(){
+    $('.drawer-list li').hover(function(){
+        $("ul:not(:animated)", this).slideDown();
+    }, function(){
+        $("ul.dropdwn_menu",this).slideUp();
+    });
+});
